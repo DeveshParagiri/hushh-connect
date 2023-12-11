@@ -42,7 +42,7 @@ def main():
 
             stripped_response = response.replace("Answer: ", "")
             print(stripped_response)
-            logging.INFO(f'STRIPPED RESPONSE: {str(stripped_response)}')
+            logging.info(f'STRIPPED RESPONSE: {str(stripped_response)}')
             write_response(user_csv=user_csv, response=stripped_response)
 
 
