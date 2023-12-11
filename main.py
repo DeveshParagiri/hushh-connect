@@ -41,7 +41,7 @@ def main():
             st.success(response)
 
             stripped_response = response.replace("Answer: ", "")
-            logging.INFO(f'STRIPPED RESPONSE: {stripped_response}')
+            # logging.INFO(f'STRIPPED RESPONSE: {stripped_response}')
             write_response(user_csv=user_csv,response=stripped_response)
 
 
