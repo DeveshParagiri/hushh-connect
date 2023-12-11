@@ -20,6 +20,6 @@ Question: People who work at Google
 df[df['Company'].str.contains('Google', case=False, na=False)]
 
 CSV file schema: 
-You have access to a LinkedIn connections CSV file which has the first name, last name, URL, Company, Position, and Connected On columns. 
+You have access to a LinkedIn connections CSV file which has the First Name, Last Name, URL, Company, Position, and Connected On as columns. 
 
 """
