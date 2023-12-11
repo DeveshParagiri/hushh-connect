@@ -16,7 +16,7 @@ def strip_response(response):
     
 def main():
 
-    load_dotenv()  # This loads the environment variables from a .env file
+    # load_dotenv()  # This loads the environment variables from a .env file
 
     os.getenv('OPENAI_API_KEY')
     
