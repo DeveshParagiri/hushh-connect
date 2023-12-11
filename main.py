@@ -3,6 +3,7 @@ import pandas as pd
 import os
 from template import prompt_template
 from dotenv import load_dotenv
+import logging
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
@@ -40,7 +41,7 @@ def main():
             st.success(response)
 
             stripped_response = response.replace("Answer: ", "")
-
+            logging.INFO(f'STRIPPED RESPONSE: {stripped_response}')
             write_response(user_csv=user_csv,response=stripped_response)
 
 
